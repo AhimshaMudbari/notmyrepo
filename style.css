@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black;
+}
+
+.logoo {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  max-height: 50vh;
+}
+
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.detail {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail h1 {
+  font-size: 50px;
+  color: aqua;
+  margin-bottom: 20px;
+}
+
+.detail p {
+  color: #555;
+}
+
+.detail p:hover {
+  color: silver;
+}
+
+/* .detail a {
+  color: aqua;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.detail a:hover {
+  background: #555;
+  color: white;
+} */
+
+.images {
+  display: flex;
+  bottom: 0;
+  border-radius: 15px;
+  transition: bottom 1s, left 1s;
+}
+.images > img {
+  border-radius: 20px;
+}
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.image:hover .pic {
+  left: 45%;
+}
+
+.vid {
+  border-right: 50px;
+  margin-left: 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 11%;
+}
+
+.vid h3 {
+  color: aqua;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+footer {
+  text-align: center;
+  color: aqua;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.marie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  * {
+    overflow-x: hidden;
+  }
+  .marie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    display: flex;
+    bottom: 0;
+    border-radius: 15px;
+    margin: 20px;
+    transform: scale(0.8);
+  }
+  .images > img {
+    border-right: 20px;
+  }
+}
